@@ -62,7 +62,7 @@ data_classes = [set(data[:,i]) for i in pos_str]
 ##2: for i in range(len(discr_vars)) for j in range(len(data_classes[i]))]
 ###todo: create data key + dictionary in spare time!
 
-#1hot encoding via sklearn package
+#1hot encoding via sklearn package (CONVERT TO FUNCTION!)
 ##integer encode
 label_enc = LabelEncoder()
 onehot_enc = OneHotEncoder(sparse=False)
