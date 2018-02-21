@@ -10,11 +10,9 @@ import os
 import sys
 import numpy as np
 import tensorflow as tf
-from model_mc import *
-from data_mc import *
+from ML02_mnist_tf_model import *
+from ML02_mnist_tf_data import *
 
-
-# TODO: You can modify this.
 EVAL_CONST = 50
 
 def eval_prediction(logits, labels):
@@ -41,9 +39,7 @@ def create_train_op(loss, learning_rate):
 
     Returns:
         train_op: The Op for training.
-    """
-    # For optimizer information, please see API
-    # https://www.tensorflow.org/versions/r0.12/api_docs/python/train/optimizers.
+    """    
     # Creates the gradient descent optimizer.
     optimizer = tf.train.AdamOptimizer(learning_rate)
     # This variable is for tracking purpose.
