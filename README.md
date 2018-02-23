@@ -14,7 +14,9 @@ Different techniques for reading, treating and analyzing data.
 <br /> C. Experiment with Regularization such as, Dropouts or L2 Loss
 
 
-<br /> WORKOUT 3 - Online Logistic Regression by Stochastic Gradient Descent
+<br /> WORKOUT 3 - Text Data
 <br /> A. 
 <br /> B. 
 <br /> C. 
+
+#Online Logistic Regression by Stochastic Gradient Descent
