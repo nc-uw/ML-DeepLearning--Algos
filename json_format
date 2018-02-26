@@ -1,0 +1,50 @@
+#
+import sys
+import json
+from collections import OrderedDict
+
+#recursive function for extracting k,v pairs in an ordered dictionary 
+def ordict(x,d):
+    #y = [ordict(v) if isinstance(v,dict) else {k: v} for k,v in x.items()]
+    #return y        
+    for k,v in x.items():
+        if isinstance(v,dict):
+            ordict(v,d)
+        else: 
+            d.append({k: v})
+    return d
+
+def listhan_ineq(g,a):    
+    if isinstance(a[k],list):
+        return [ai for ai in a if all(k in a and g[k] in a[k] for k in g.keys())]
+    else:
+        return [ai for ai in a if all(k in a and g[k] == a[k] for k in g.keys())]
+
+def listhan_notineq(d,a):    
+    if isinstance(a[k],list):
+        return [ai for ai in a if all(k in a and d[k] not in a[k] for k in d.keys())]
+    else:
+        return [ai for ai in a if all(k in a and d[k] != a[k] for k in d.keys())]
+    
+add=[]
+get=[]
+delete=[]
+for line in sys.stdin:
+    #split at first occurence of ' '
+    x = line.strip('\n').split(" ",1)
+    if x[0] == 'add':
+        addi=json.loads(x[1], object_pairs_hook=OrderedDict)
+        ##uncomment to test unpacking of items in addi
+        #print ('addi_keys_unpacked',ordict(addi,d=[]))
+        add.append(addi)
+    elif x[0] == 'get':
+        get = json.loads(x[1], object_pairs_hook=OrderedDict)
+        ##uncomment to test unpacking of items in get
+        #print ('get_dict_unpacked',ordict(get,d=[]))
+        match = [addi for addi in add if all(it in ordict(addi,d=[]) for it in ordict(get,d=[]))]
+        #print output in desired format
+        for matchi in match:
+            print (json.dumps(matchi,separators=(',',':')))
+    elif x[0] == 'delete':
+        delete = json.loads(x[1], object_pairs_hook=OrderedDict)
+        add = [addi for addi in add if all(it not in ordict(addi,d=[]) for it in ordict(delete,d=[]))]
