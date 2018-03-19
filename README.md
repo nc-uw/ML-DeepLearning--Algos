@@ -1,5 +1,5 @@
 # Machine-Learning-Workouts
-Different techniques for reading, treating and analyzing data.
+Implementation of various Machine Learning methods!
 
 <br /> WORKOUT 1 - Linear Regression with Regularization, Crossvalidation
 <br /> A. Read data from .txt file hosted on a given url, treat for missing values, split into Train, Test & Validation Samples
@@ -14,9 +14,13 @@ Different techniques for reading, treating and analyzing data.
 <br /> C. Experiment with Regularization such as, Dropouts or L2 Loss
 
 
-<br /> WORKOUT 3 - Text Data
+<br /> WORKOUT 3 - Logistic Regression by Stochastic Gradient Descent
 <br /> A. 
 <br /> B. 
 <br /> C. 
 
-#Online Logistic Regression by Stochastic Gradient Descent
+
+<br /> WORKOUT 4 - Character-based Language Markov Models
+<br /> A. Use twitter database to build a model that can predict the language of the tweet
+<br /> B. Related probability tables are created for every language subset in the training database
+<br /> C. These tables are applied to predict the language of the tweet in the validation database
