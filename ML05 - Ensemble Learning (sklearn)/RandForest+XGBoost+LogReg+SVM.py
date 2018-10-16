@@ -14,6 +14,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.cross_validation import KFold
 
+#implemented on windows machine @ee lab
 train = pd.read_csv('C:\\Users\\nc57\\Downloads\\titanic\\train.csv')
 test = pd.read_csv('C:\\Users\\nc57\\Downloads\\titanic\\test.csv')
 gender_test = pd.read_csv('C:\\Users\\nc57\\Downloads\\titanic\\gender_submission.csv')
