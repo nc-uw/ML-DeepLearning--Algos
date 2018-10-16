@@ -1,26 +1,35 @@
-# Machine-Learning-Workouts
-Implementation of various Machine Learning methods!
+# Machine-Learning
+Implementation of various Machine Learning, Deep Learning methods. Some of the algorithms are coded from scratch, some are based on available libraries.
 
-<br /> WORKOUT 1 - Linear Regression with Regularization, Crossvalidation
-<br /> A. Read data from .txt file hosted on a given url, treat for missing values, split into Train, Test & Validation Samples
-<br /> B. One Hot Encoding
-<br /> C. Linear Regression, LASSO, Ridge
-<br /> D. Cross Validation
+<br /> 0 - Dimensionality Reduction Methods
+<br /> Comparison between PCA, CCA, KPCA, t-SNE & ISOMAP.
 
-
-<br /> WORKOUT 2 - DeepNN using TensorFlow
-<br /> A. Read MNIST data from .csv files
-<br /> B. Implement Deep Learning with RELU activation units
-<br /> C. Experiment with Regularization such as, Dropouts or L2 Loss
+<br /> 1 - Regression methods (implemented from scratch)
+<br /> A. Linear Regression to predict House Prices.
+<br /> B. Logsitic Regression (Stochastic Gradient Descent) to predict Employement.
+  
 
 
-<br /> WORKOUT 3 - Logistic Regression by Stochastic Gradient Descent
-<br /> A. 
-<br /> B. 
-<br /> C. 
+<br /> 2 - Deep Learning
+<br /> A. Implement Deep Neural Nets (TensorFlow) with RELU activation units to classify MNIST data.
+<br /> B. Convolutional Neural Nets (TensorFlow) to classify FASHION MNIST data.
+<br /> C. ARIMA vs. LSTM (Keras) for BitCoin Price prediciton.
+<br /> C. Deep Ladder Nets (Neural Nets modelled in TensorFlow) to classify MNIST data, given only 1% of the data is labelled. Inspired by https://github.com/CuriousAI/ladder
 
 
-<br /> WORKOUT 4 - Character-based Language Markov Models
-<br /> A. Use twitter database to build a model that can predict the language of the tweet
-<br /> B. Related probability tables are created for every language subset in the training database
-<br /> C. These tables are applied to predict the language of the tweet in the validation database
+
+<br /> 3 - Twitter Language Model
+<br /> Predict Language using a Character Level Unigram Markov Model.
+
+<br /> 4 - Decision Trees
+<br /> A. AdaBoost: Implementation of algorithm from scratch to predict probability of Breast Cancer.
+<br /> B. CART: Implementation of algorithm from scratch on IRIS dataset.
+
+<br /> 5 - Ensemble Learning
+<br /> Prediciton of Survival on TITANIC dataset. The final prediciton was generated using an ensemble of Random Forest, GradBoost, SVM, LogReg, AdaBoost learners that were finally passed through XGBoost.
+
+<br /> 6 - Expectation Maximization
+
+<br /> 7 - Generative Adverserial Network:
+<br /> Implementation of a GAN with fully-connected layers for both Generator and Discriminator to learn a multimodal distribution. The loss used for training was Wasserstein Loss. Inspired by https://github.com/igul222/improved_wgan_training
+
