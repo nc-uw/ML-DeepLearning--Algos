@@ -1,10 +1,10 @@
-# Machine-Learning
+# Machine-Learning-Algos
 Implementation of various Machine Learning, Deep Learning methods. Some of the algorithms are coded from scratch, some are based on available libraries.
 
 <br /> 0 - Dimensionality Reduction Methods
 <br /> Comparison between PCA, CCA, KPCA, t-SNE & ISOMAP.
 
-<br /> 1 - Regression methods (implemented from scratch)
+<br /> 1 - Regression methods (Implemented from scratch)
 <br /> A. Linear Regression to predict House Prices.
 <br /> B. Logsitic Regression (Stochastic Gradient Descent) to predict Employement.
   
@@ -21,9 +21,9 @@ Implementation of various Machine Learning, Deep Learning methods. Some of the a
 <br /> 3 - Twitter Language Model
 <br /> Predict Language using a Character Level Unigram Markov Model.
 
-<br /> 4 - Decision Trees
-<br /> A. AdaBoost: Implementation of algorithm from scratch to predict probability of Breast Cancer.
-<br /> B. CART: Implementation of algorithm from scratch on IRIS dataset.
+<br /> 4 - Decision Trees (Implemented from scratch)
+<br /> A. AdaBoost: Coding of algo to predict probability of Breast Cancer.
+<br /> B. CART: Coding of algo on IRIS dataset.
 
 <br /> 5 - Ensemble Learning
 <br /> Prediciton of Survival on TITANIC dataset. The final prediciton was generated using an ensemble of Random Forest, GradBoost, SVM, LogReg, AdaBoost learners that were finally passed through XGBoost.
